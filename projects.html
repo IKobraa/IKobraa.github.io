@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofile | Dominic Hermann</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+     <!---Navigation-Bar-->
+    <div class="nav-bar">
+        <div class="logo"><span>Dominic </span><span class="surname">Hermann</span></div>
+        <div class="nav-children nav child1"> <a href="index.html">Dashboard</a></div>
+        <div class="nav-children nav child2"> <a href="projects.html">Projects</a> </div>
+        <div class="nav-children nav child4"><a href="resume.html">Resume</a></div>
+        <div class="nav-children nav child5"><a href="about.html">Contact</a></div>
+    </div>
+
+    <!---Game Of Life and Mandelbrot-Julia-Set description-->
+    <div class="game-of-life">
+
+            <div class="navigation-projects">
+                <ul>
+                    <li><a href="projects.html">Java Projects</a></li>
+                    <li><a href="projectbigdata.html">Big-Data Project</a></li>
+                </ul>
+            </div>
+
+        <div class="gol-child gol-item1">
+            <p>
+                Game of Life
+            </p>
+        </div>
+
+        <!--Game Of Life-->
+        <div class="gol-child gol-item2">
+
+            <h1>Conway's Game of Life</h1>
+            <p>
+                Conway's Game of Life is a cellular automaton devised by mathematician John Conway in 1970.
+                It is a zero-player game, meaning that its evolution is determined by its initial state, with no
+                further input required. The game consists of a grid of cells, each of which can be in one of two
+                states: alive or dead. In my implementation i allowed the user to color in the pixels that are alive
+                before the game starts and even while the game is running.
+            </p>
+            <h2>Rules:</h2>
+            <ul>
+                <li>Any live cell with 2 or 3 live neighbors survives.</li>
+                <li>Any dead cell with exactly 3 live neighbors becomes a live cell.</li>
+                <li>All other live cells die in the next generation, and all other dead cells remain dead.</li>
+            </ul>
+            <p>
+                The game's evolution advances in discrete time steps, with each generation being a reflection of the
+                previous one. Despite its simple rules, Conway's Game of Life can exhibit complex and intricate patterns
+                that have fascinated mathematicians, computer scientists, and enthusiasts alike. In the following picture 
+                you can see some of these patterns.
+            </p>
+            
+            <div class="images-gol">
+                <img  src="patterns2gol.png" alt="">
+                <img  src="patternsgol.png" alt="">
+            </div>
+            
+            <p class="git-source"> <a href="https://github.com/IKobraa/GameOfLife">-> Github</a></p>
+
+        </div>
+        <div style="margin-left: 40%;font-size: 40px;color: white;margin-top: 20px;"><p>Mandelbrot-Julia-Set</p></div>
+
+        <!--Mandelbrot-Julia-Set-->
+        <div class="gol-child gol-item3">
+
+            <div class="description-mandel-julia">
+                <h1>Exploring the Mandelbrot and Julia Sets</h1>
+                <p>
+                    Welcome to a journey into the mesmerizing world of fractals! On this page, we want to give you a concise explination about the
+                    captivating beauty of the Mandelbrot and Julia sets, two remarkable fractal formations that have captured the
+                    imagination of mathematicians, artists, and enthusiasts alike.
+                </p>
+                <h2>The Mandelbrot Set</h2>
+                <p>
+                    The Mandelbrot set is a complex mathematical structure that emerges from a seemingly simple iterative process. Imagine
+                    picking any point c in the complex plane and repeatedly squaring it and adding
+                    c to itself. The Mandelbrot set is the collection of all points
+                    c for which this process remains bounded—those that do not spiral off into infinity.
+                    As you explore the Mandelbrot set, you'll encounter intricate patterns, spirals, and self-similar shapes at various
+                    levels of magnification.
+                </p>
+                <h2>The Julia Set</h2>
+                <p>
+                    Similar to the Mandelbrot set, the Julia set is another fascinating fractal structure that arises from a slightly
+                    different iterative process. Instead of exploring all points in the complex plane, the Julia set focuses on a fixed
+                    complex number c. 
+                    The points in the Julia set are those that remain bounded under the iteration process of repeatedly squaring and
+                    adding c. Each unique
+                    c value leads to a distinct Julia set, characterized by its own unique geometry and visual characteristics. Some Julia
+                    sets exhibit spirals, while others form intricate webs or intricate basins of attraction.
+                </p>
+
+                <div class="mandel-julia-img">
+                    <img src="newmandel.jpg" alt="">
+                    <img src="julianew.jpg" alt="">
+                </div>
+                
+                <p class="git-source"> <a href="https://github.com/IKobraa/MandelBrot-JuliaSet">-> Github</a></p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
